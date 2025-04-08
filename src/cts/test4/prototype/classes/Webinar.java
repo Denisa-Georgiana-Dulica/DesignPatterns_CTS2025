@@ -1,4 +1,4 @@
-package cts.test4.classes;
+package cts.test4.prototype.classes;
 
 import java.util.List;
 

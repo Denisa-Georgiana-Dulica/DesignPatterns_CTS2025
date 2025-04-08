@@ -1,9 +1,8 @@
-package cts.test4.main;
+package cts.test4.prototype.main;
 
-import cts.test2.prototype.classes.PrototypeCollection;
-import cts.test4.classes.PrototypeCollectionWebinar;
-import cts.test4.classes.SocialMediaPlatform;
-import cts.test4.classes.Webinar;
+import cts.test4.prototype.classes.PrototypeCollectionWebinar;
+import cts.test4.prototype.classes.SocialMediaPlatform;
+import cts.test4.prototype.classes.Webinar;
 
 public class Main {
     public static void main(String[] args) {
