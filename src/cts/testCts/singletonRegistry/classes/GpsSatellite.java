@@ -1,4 +1,4 @@
-package cts.singletonRegistry.exercitiul1.classes;
+package cts.testCts.singletonRegistry.classes;
 
 public class GpsSatellite implements ServiceConnection {
     private String type;

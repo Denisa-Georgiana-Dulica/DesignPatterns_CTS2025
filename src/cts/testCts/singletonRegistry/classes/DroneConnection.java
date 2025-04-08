@@ -1,4 +1,4 @@
-package cts.singletonRegistry.exercitiul1.classes;
+package cts.testCts.singletonRegistry.classes;
 
 import java.util.HashMap;
 import java.util.Map;
