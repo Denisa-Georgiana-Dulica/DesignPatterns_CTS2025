@@ -19,6 +19,5 @@ public class Main {
         weatherService.display();
 
         System.out.println(gpsSatellite1==gpsSatellite2); //true==> the same object
-
     }
 }
