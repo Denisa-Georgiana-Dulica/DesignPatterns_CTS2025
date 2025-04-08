@@ -1,7 +1,7 @@
-package cts.test3.main;
+package cts.test3.simpleFactory.main;
 
-import cts.test3.classes.AbstractAirQualityReport;
-import cts.test3.classes.SimpleFactory;
+import cts.test3.simpleFactory.classes.AbstractAirQualityReport;
+import cts.test3.simpleFactory.classes.SimpleFactory;
 
 public class Main {
     public static void main(String[] args) {

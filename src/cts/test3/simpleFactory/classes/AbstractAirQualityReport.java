@@ -1,4 +1,4 @@
-package cts.test3.classes;
+package cts.test3.simpleFactory.classes;
 
 public interface AbstractAirQualityReport {
     void generateRaport();
