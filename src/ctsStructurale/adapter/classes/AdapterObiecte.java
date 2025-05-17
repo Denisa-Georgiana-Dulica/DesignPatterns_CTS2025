@@ -1,9 +1,9 @@
 package ctsStructurale.adapter.classes;
 
-public class AdaptorObiecte implements SistemBileteTrenAbstract{
+public class AdapterObiecte implements SistemBileteTrenAbstract{
     private SistemBileteAutobuzAbstract sistemBileteAutobuzAbstract;
 
-    public AdaptorObiecte(SistemBileteAutobuzAbstract sistemBileteAutobuzAbstract) {
+    public AdapterObiecte(SistemBileteAutobuzAbstract sistemBileteAutobuzAbstract) {
         this.sistemBileteAutobuzAbstract = sistemBileteAutobuzAbstract;
     }
 
