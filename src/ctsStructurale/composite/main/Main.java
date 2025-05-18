@@ -2,6 +2,8 @@ package ctsStructurale.composite.main;
 
 import ctsStructurale.composite.classes.Armata;
 import ctsStructurale.composite.classes.Luptator;
+import ctsStructurale.composite.classesRestaurant.Meniu;
+import ctsStructurale.composite.classesRestaurant.Produs;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,6 +25,33 @@ public class Main {
         suprem.adaugaLuptator(general);
 
         suprem.ataca("Cutit");
+
+        /*Este dorita reprezentarea meniului in cadrul aplicației.
+        Meniul conține secțiuni (startere, băuturi, desert, etc.)
+        fiecare secțiune poate conține subsecțiuni (sucuri, cafea,
+        etc) sau item-uri (, apa plata, apa minerala, etc). Sa se
+        realizeze modulul care permite reprezentarea arborescenta a
+        meniului restaurantului.*/
+
+        Produs p1=new Produs("cafea");
+        Produs p2=new Produs("suc");
+        Produs p3=new Produs("tort");
+        Produs p4=new Produs("bruschete");
+        Meniu sectiune1=new Meniu("bauturi");
+        Meniu sectiune2=new Meniu("desert");
+        Meniu sectiune3=new Meniu("starter");
+        Meniu meniuFinal=new Meniu("Meniu");
+
+
+        sectiune1.adaugaProdus(p1);
+        sectiune1.adaugaProdus(p2);
+        meniuFinal.adaugaProdus(sectiune1);
+        sectiune2.adaugaProdus(p3);
+        meniuFinal.adaugaProdus(sectiune2);
+        sectiune3.adaugaProdus(p4);
+        meniuFinal.adaugaProdus(sectiune3);
+        meniuFinal.afiseazaProdus();
+
 
     }
 }
