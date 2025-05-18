@@ -1,6 +1,10 @@
 package ctsStructurale.decorator.main;
 
 import ctsStructurale.decorator.classes.*;
+import ctsStructurale.decorator.classesRestaurant.DecoratorFelicitare;
+import ctsStructurale.decorator.classesRestaurant.DecoratorNotaDePlata;
+import ctsStructurale.decorator.classesRestaurant.DocumentPrintat;
+import ctsStructurale.decorator.classesRestaurant.NotaDePlata;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,5 +30,16 @@ public class Main {
         DecoratorCocktailFaraGheata cocktailFaraGheataCuExtrasShot=new DecoratorCocktailFaraGheata(cocktailExtraShot);
         cocktailFaraGheataCuExtrasShot.sePrepara();
         cocktailFaraGheataCuExtrasShot.seConsuma();
+
+        /*Cu ocazia sărbătorilor de sfârșit de an managerul restaurantului dorește
+        ca atunci când este printat o notă să se printeze și o felicitare de la Mulți
+        ani pentru client. Se dorește adăugarea acestei noi funcționalități pentru
+        clasa NotaDePlata la printare*/
+
+        DocumentPrintat notaPlata=new NotaDePlata(200);
+        notaPlata.sePrinteaza();
+        System.out.println("------------------------------------");
+        DecoratorFelicitare notaDePlataCuFelicitare=new DecoratorFelicitare(notaPlata);
+        notaDePlataCuFelicitare.sePrinteaza();
     }
 }
