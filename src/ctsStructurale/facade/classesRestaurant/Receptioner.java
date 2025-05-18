@@ -4,8 +4,8 @@ public class Receptioner {
 
     public void verificaMasa(Masa masa)
     {
-        Ospatar ospatar;
-        Picollo picollo;
+        Ospatar ospatar=new Ospatar();
+        Picollo picollo=new Picollo();
         if(masa.isEsteLibera())
         {
             if(picollo.esteDebarasata(masa))
