@@ -1,6 +1,6 @@
-package ctsTest2.test1.classes.chain;
+package ctsTest2.test1.classes.decorator;
 
-public class WashProgram1 implements AbstractAutoWashOptions{
+public class WashProgram2Decorator implements AbstractAutoWashOptions {
 
     @Override
     public boolean isPrewashSelected() {
@@ -9,7 +9,7 @@ public class WashProgram1 implements AbstractAutoWashOptions{
 
     @Override
     public boolean isBrushWashingSelected() {
-        return false;
+        return true;
     }
 
     @Override

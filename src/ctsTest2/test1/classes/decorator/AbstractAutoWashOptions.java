@@ -1,4 +1,4 @@
-package ctsTest2.test1.classes.chain;
+package ctsTest2.test1.classes.decorator;
 
 public interface AbstractAutoWashOptions {
     boolean isPrewashSelected();

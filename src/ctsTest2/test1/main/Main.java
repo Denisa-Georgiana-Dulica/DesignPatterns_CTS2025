@@ -1,6 +1,8 @@
-package ctsComportamentale.test1.main;
+package ctsTest2.test1.main;
 
-import ctsComportamentale.test1.classes.chain.*;
+import ctsTest2.test1.classes.chain.*;
+import ctsTest2.test1.classes.decorator.*;
+import ctsTest2.test1.classes.decorator.AbstractAutoWashOptions;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,5 +18,13 @@ public class Main {
         WashProgram1 washProgram1=new WashProgram1();
         WashProgram2 washProgram2=new WashProgram2();
         fazaPrespalare.executaFaza(washProgram1);
+
+        /*rulează în permanență și nu poate fi oprită spre a fi recompilată. - decorator
+        * Orice extensie a funcționalității trebuie să se facă fără recompilare – deci la runtime (în timpul execuției).*/
+        System.out.println("----------------------------");
+        AbstractAutoWashOptions washProgram2Decorator=new WashProgram2Decorator();
+        DecoratorSpalareApaDedurizata spalareCuApaDedurizata=new DecoratorSpalareApaDedurizata(washProgram2Decorator);
+        spalareCuApaDedurizata.isBrushWashingSelected();
+
     }
 }

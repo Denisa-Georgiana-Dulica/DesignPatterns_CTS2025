@@ -1,4 +1,4 @@
-package ctsComportamentale.test1.classes.chain;
+package ctsTest2.test1.classes.chain;
 
 public class FazaPrespalare extends FazaSpalare{
 
