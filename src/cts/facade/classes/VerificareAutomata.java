@@ -19,7 +19,7 @@ public class VerificareAutomata {
             {
                 if(salon.verificaPaturiLibere())
                 {
-                    System.out.println("Pacient internat");
+                    System.out.println("DateReteta internat");
                 }else{
                     System.out.println("Nu exista pat liber, nu se poate interna pacientul");
                 }

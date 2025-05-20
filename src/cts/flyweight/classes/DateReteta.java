@@ -1,11 +1,11 @@
 package cts.flyweight.classes;
 
-public class Reteta implements RetetaPacientAbstract {
+public class DateReteta implements RetetaPacientAbstract {
 
     private final String nume;
     private final int nrAsigurare;
 
-    public Reteta(String nume, int nrAsigurare) {
+    public DateReteta(String nume, int nrAsigurare) {
         this.nume = nume;
         this.nrAsigurare = nrAsigurare;
     }

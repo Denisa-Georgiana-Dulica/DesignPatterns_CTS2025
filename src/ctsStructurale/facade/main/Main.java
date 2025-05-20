@@ -18,7 +18,7 @@ public class Main {
         alexa.noapteBuna();
 
         /*Pentru internarea unui pacient în spital trebuie
-        verificată gravitatea stării pacientului prin intermediul clasei Pacient,
+        verificată gravitatea stării pacientului prin intermediul clasei DateReteta,
         verificarea confirmării Medicului că trebuie internat,
         verificarea disponibilității unui pat în cameră prin intermediul clasei Salon care are lista cu paturile libere si ocupate.
         Spitalul dorește ca personalul spitalului să nu fi nevoit să facă aceste

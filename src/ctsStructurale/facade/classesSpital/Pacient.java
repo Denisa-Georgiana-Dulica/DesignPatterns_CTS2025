@@ -6,7 +6,7 @@ public class Pacient {
     public void stabilesteStareGrava()
     {
         areStareGrava=true;
-        System.out.println("Pacient cu stare grava");
+        System.out.println("DateReteta cu stare grava");
     }
 
     public void stabilesteStareStabila()
